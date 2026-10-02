@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Smart Power Energy - Trusted rooftop solar EPC company in North &amp; South Bihar. On-Grid &amp; Hybrid solar systems (1-10 kW) with PM Surya Ghar Central &amp; Bihar State DBT subsidy." />
+  <meta name="theme-color" content="#ea580c" />
+
+  <title>Smart Power Energy - Trusted &amp; Verified Solar EPC Company | North &amp; South Bihar</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", Arial, sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      /* Enhanced solar panel background with balanced translucency */
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(255, 237, 213, 0.4) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(224, 242, 254, 0.4) 0%, transparent 40%),
+        linear-gradient(rgba(248, 250, 252, 0.85), rgba(248, 250, 252, 0.88)),
+        url('https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* Top Ribbon */
+    .top-bar {
+      background-color: #ea580c;
+      color: #ffffff;
+      font-size: 13px;
+      padding: 8px 16px;
+      text-align: center;
+      font-weight: 500;
+    }
+    .top-bar a {
+      color: #fef08a;
+      text-decoration: underline;
+      font-weight: 700;
+      margin-left: 6px;
+    }
+
+    /* Main Navbar */
+    .navbar {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .nav-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-logo-img {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+    }
+    .brand-titles h1 {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    .brand-titles .smart { color: #dc2626; }
+    .brand-titles .power { color: #0284c7; }
+    .brand-titles .energy { color: #16a34a; }
+    .brand-titles p {
+      font-size: 10px;
+      color: #475569;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+    }
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #334155;
+      transition: color 0.15s ease;
+    }
+    .nav-links a:hover { color: #ea580c; }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Clean Language Switcher (Segmented Control) */
+    .lang-switcher {
+      display: inline-flex;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 9999px;
+      padding: 3px;
+      gap: 2px;
+    }
+    .lang-opt {
+      border: none;
+      background: transparent;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #475569;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-opt.active {
+      background: #0f172a;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    }
+
+    .btn-nav-wa {
+      background-color: #22c55e;
+      color: #ffffff;
+      padding: 8px 18px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.15s;
+    }
+    .btn-nav-wa:hover { background-color: #16a34a; }
+
+    .btn-nav-call {
+      background-color: #ea580c;
+      color: #ffffff;
+      padding: 8px 20px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.15s;
+    }
+    .btn-nav-call:hover { background-color: #c2410c; }
+
+    @media (max-width: 992px) {
+      .nav-links { display: none; }
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      background: 
+        linear-gradient(135deg, rgba(255, 247, 237, 0.84) 0%, rgba(255, 255, 255, 0.80) 100%),
+        url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 44px 16px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .hero-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+    @media (min-width: 900px) {
+      .hero-container { grid-template-columns: 1.2fr 0.8fr; }
+    }
+    .hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .hero-tag {
+      background: #ffedd5;
+      color: #c2410c;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+    .hero-tag.verified {
+      background: #ecfdf5;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+    }
+    .hero-title {
+      font-size: 34px;
+      font-weight: 900;
+      color: #0f172a;
+      line-height: 1.3;
+      margin-bottom: 14px;
+    }
+    .hero-title span { color: #ea580c; }
+    .hero-desc {
+      color: #475569;
+      font-size: 15px;
+      margin-bottom: 22px;
+      line-height: 1.6;
+    }
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+    .btn-hero-primary {
+      background: #ea580c;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-hero-primary:hover { background: #c2410c; }
+    .btn-hero-sec {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      color: #1e293b;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 18px;
+    }
+    .stat-val { font-size: 22px; font-weight: 900; color: #0f172a; }
+    .stat-lbl { font-size: 12px; color: #64748b; font-weight: 600; }
+
+    /* Inquiry Card */
+    .inquiry-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 26px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.06);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+    }
+    .inquiry-card h3 { font-size: 18px; font-weight: 800; margin-bottom: 4px; color: #0f172a; }
+    .inquiry-card p { font-size: 13px; color: #64748b; margin-bottom: 16px; }
+    .form-group { margin-bottom: 12px; }
+    .form-group label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 4px; color: #334155; }
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 14px;
+      outline: none;
+      background: #ffffff;
+    }
+    .form-group input:focus, .form-group select:focus {
+      border-color: #ea580c;
+    }
+    .btn-submit-form {
+      width: 100%;
+      background: #22c55e;
+      color: #ffffff;
+      border: none;
+      padding: 13px;
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 6px;
+      transition: background 0.15s;
+    }
+    .btn-submit-form:hover { background: #16a34a; }
+
+    /* Section Wrapper */
+    .section-wrap { max-width: 1280px; margin: 0 auto; padding: 48px 16px; }
+    .section-header { text-align: center; max-width: 760px; margin: 0 auto 30px auto; }
+    .section-tag { font-size: 12px; font-weight: 800; color: #ea580c; text-transform: uppercase; }
+    .section-header h2 { font-size: 26px; font-weight: 900; color: #0f172a; margin-top: 4px; }
+    .section-header p { font-size: 14px; color: #64748b; margin-top: 6px; }
+
+    /* Calculator Styles */
+    .calc-box {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.03);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+    }
+    .calc-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .calc-pill {
+      background: #ea580c;
+      color: #ffffff;
+      padding: 6px 18px;
+      border-radius: 9999px;
+      font-size: 18px;
+      font-weight: 800;
+    }
+    .kw-selector-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 18px;
+      justify-content: center;
+    }
+    .kw-btn {
+      padding: 7px 14px;
+      border: 1px solid #cbd5e1;
+      background: #f8fafc;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+      color: #334155;
+      transition: all 0.15s;
+    }
+    .kw-btn.active {
+      background: #ea580c;
+      color: #ffffff;
+      border-color: #ea580c;
+    }
+    .slider-control {
+      width: 100%;
+      height: 8px;
+      border-radius: 5px;
+      background: #e2e8f0;
+      outline: none;
+      cursor: pointer;
+      margin-bottom: 24px;
+      accent-color: #ea580c;
+    }
+    .calc-results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .res-card {
+      padding: 16px 12px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid #e2e8f0;
+    }
+    .res-card.total { background: #f8fafc; }
+    .res-card.central { background: #eff6ff; border-color: #bfdbfe; color: #1d4ed8; }
+    .res-card.state { background: #ecfdf5; border-color: #a7f3d0; color: #047857; }
+    .res-card.net { background: #fff7ed; border-color: #fed7aa; color: #c2410c; }
+    .res-card.savings { background: #f0fdf4; border-color: #bbf7d0; color: #15803d; }
+    .res-lbl { font-size: 12px; font-weight: 600; margin-bottom: 4px; }
+    .res-val { font-size: 20px; font-weight: 900; }
+
+    /* ========================================================== */
+    /* Screenshot 58 & 59 Package Design Tokens                  */
+    /* ========================================================== */
+    .tabs-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 28px;
+    }
+    .tabs-pill-box {
+      display: inline-flex;
+      background: #f1f5f9;
+      padding: 4px;
+      border-radius: 14px;
+      gap: 4px;
+      border: 1px solid #e2e8f0;
+    }
+    .tab-toggle-btn {
+      padding: 10px 24px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      color: #334155;
+      transition: all 0.2s ease;
+    }
+    .tab-toggle-btn.active {
+      background: #ea580c;
+      color: #ffffff;
+      box-shadow: 0 2px 6px rgba(234, 88, 12, 0.3);
+    }
+
+    /* 4-Column Responsive Grid */
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+    @media (max-width: 1200px) {
+      .packages-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 680px) {
+      .packages-grid { grid-template-columns: 1fr; }
+    }
+
+    .pkg-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .pkg-card:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+    .pkg-card.popular-card {
+      border: 2px solid #ea580c;
+    }
+    .card-top-tag {
+      position: absolute;
+      top: -12px;
+      right: 18px;
+      background: #ea580c;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      box-shadow: 0 2px 6px rgba(234, 88, 12, 0.3);
+    }
+
+    .pkg-subbadge {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0284c7;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      align-self: flex-start;
+    }
+    .pkg-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 14px;
+    }
+
+    /* Price Box (Screenshot 58) */
+    .pkg-cost-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+    }
+    .cost-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 6px;
+      color: #475569;
+    }
+    .cost-row .cost-val {
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .cost-row .sub-green {
+      color: #16a34a;
+      font-weight: 700;
+    }
+    .cost-divider {
+      border-top: 1px dashed #cbd5e1;
+      margin: 10px 0;
+    }
+    .net-cost-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .net-cost-lbl {
+      font-size: 14px;
+      font-weight: 800;
+      color: #0f172a;
+    }
+    .net-cost-val {
+      font-size: 20px;
+      font-weight: 900;
+      color: #ea580c;
+    }
+
+    /* Hybrid Specs (Screenshot 59) */
+    .hybrid-spec-lbl { font-size: 13px; color: #64748b; }
+    .hybrid-spec-val { font-size: 13px; font-weight: 700; color: #0f172a; }
+    .hybrid-spec-blue { font-size: 13px; font-weight: 700; color: #0284c7; }
+    .hybrid-highlight-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .hybrid-highlight-lbl {
+      font-size: 13px;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.3;
+    }
+    .hybrid-highlight-val {
+      font-size: 16px;
+      font-weight: 900;
+      color: #0284c7;
+      text-align: right;
+      line-height: 1.3;
+    }
+
+    /* Bullets */
+    .pkg-bullets {
+      list-style: none;
+      font-size: 13px;
+      color: #334155;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .pkg-bullets li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .pkg-bullets .check-icon {
+      color: #16a34a;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    .btn-card-green {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: #22c55e;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 800;
+      padding: 11px;
+      border-radius: 9px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+    .btn-card-green:hover { background: #16a34a; }
+
+    .btn-card-blue {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: #0284c7;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 800;
+      padding: 11px;
+      border-radius: 9px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+    .btn-card-blue:hover { background: #0369a1; }
+
+    /* Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+    .feat-card {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(8px);
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 24px;
+      text-align: center;
+    }
+    .feat-icon { font-size: 32px; margin-bottom: 12px; }
+    .feat-title { font-size: 16px; font-weight: 800; color: #0f172a; margin-bottom: 8px; }
+    .feat-desc { font-size: 13px; color: #64748b; line-height: 1.5; }
+
+    /* Footer */
+    .footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 44px 16px 24px 16px;
+      font-size: 13px;
+    }
+    .footer-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+    }
+    .footer h4 { color: #ffffff; font-size: 16px; font-weight: 800; margin-bottom: 12px; }
+    .footer p { margin-bottom: 8px; line-height: 1.6; }
+    .footer a { color: #f8fafc; }
+    .footer a:hover { text-decoration: underline; }
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #1e293b;
+      margin-top: 36px;
+      padding-top: 18px;
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-wa-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: #22c55e;
+      color: #ffffff;
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(34, 197, 94, 0.4);
+      z-index: 9999;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+    .floating-wa-btn:hover {
+      transform: scale(1.05);
+      background-color: #16a34a;
+    }
+    .floating-wa-btn svg { width: 28px; height: 28px; fill: currentColor; }
+  </style>
+</head>
+<body>
+
+  <!-- Top Ribbon with Dynamic Language -->
+  <div class="top-bar">
+    <span id="topBarText">⚡ PM Surya Ghar: Direct Central &amp; Bihar State DBT Subsidy Available! | Up to 100% savings on electricity bills:</span> 
+    <a href="tel:+917004729460">+91 7004729460</a>
+  </div>
+
+  <!-- Main Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="brand-wrap">
+        <img src="image-removebg-preview.png" alt="Smart Power Energy Logo" class="brand-logo-img" onerror="this.style.display='none'">
+        <div class="brand-titles">
+          <h1><span class="smart">SMART</span> <span class="power">POWER</span> <span class="energy">ENERGY</span></h1>
+          <p id="brandSub">ROOFTOP SOLAR SOLUTIONS | BIHAR</p>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#home" id="navHome">Home</a>
+        <a href="#calculator" id="navCalc">Subsidy Calculator</a>
+        <a href="#packages" id="navPkg">Solar Package</a>
+        <a href="#features" id="navFeat">features</a>
+        <a href="#contact" id="navContact">Contact Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Distinct English OR Hindi Toggle Switch -->
+        <div class="lang-switcher">
+          <button class="lang-opt active" id="btnLangEn" onclick="setLanguage('en')">English</button>
+          <button class="lang-opt" id="btnLangHi" onclick="setLanguage('hi')">हिन्दी</button>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=917004729460&text=Hello,%20I%20want%20information%20about%20Solar%20System." target="_blank" class="btn-nav-wa" id="navWaBtn">WhatsApp</a>
+        <a href="tel:+917004729460" class="btn-nav-call" id="navCallBtn">Call</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div>
+        <div class="hero-badge-row">
+          <span class="hero-tag" id="heroBadge1">⚡ Up to 100% savings on electricity bills</span>
+          <span class="hero-tag verified" id="heroBadge2">✓ Trusted &amp; *Verified Company</span>
+        </div>
+        <h2 class="hero-title" id="heroMainTitle">Install Rooftop Solar Plant, <br><span>Reliable Solar Service in North Bihar and South Bihar!</span></h2>
+        <p class="hero-desc" id="heroMainDesc">Reliable rooftop solar engineering in North Bihar (NBPDCL) and South Bihar (SBPDCL). High-efficiency Mono PERC panels, hot-dip GI structure, and official net-metering to maximize Central and Bihar State DBT subsidies.</p>
+        <div class="hero-btns">
+          <a href="#calculator" class="btn-hero-primary" id="heroBtnCalc">Subsidy Calculator</a>
+          <a href="tel:+917004729460" class="btn-hero-sec">📞 +91 7004729460</a>
+          <a href="mailto:smartpowerenergys@gmail.com" class="btn-hero-sec" id="heroBtnEmail">✉ Email Us</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="stat-val">30 Years</div><div class="stat-lbl" id="heroStat1">Panel Warranty</div></div>
+          <div><div class="stat-val">Up to 100%</div><div class="stat-lbl" id="heroStat2">Bill Savings</div></div>
+          <div><div class="stat-val">4-5 Years</div><div class="stat-lbl" id="heroStat3">Payback Period</div></div>
+        </div>
+      </div>
+
+      <!-- Inquiry Form -->
+      <div class="inquiry-card">
+        <h3 id="formTitle">Book Free Site Inspection</h3>
+        <p id="formSub">Fill details to get an instant proposal directly on WhatsApp.</p>
+        <form onsubmit="handleInquirySubmit(event)">
+          <div class="form-group">
+            <label id="lblCustName">Full Name *</label>
+            <input type="text" id="custName" placeholder="e.g. Ramesh Kumar" required />
+          </div>
+          <div class="form-group">
+            <label id="lblCustPhone">Mobile Number *</label>
+            <input type="tel" id="custPhone" placeholder="e.g. 7004729460" required />
+          </div>
+          <div class="form-group">
+            <label id="lblCustCA">Consumer CA Number (Electricity Bill) *</label>
+            <input type="text" id="custCA" placeholder="10-12 Digit CA Number from Electricity Bill" required />
+          </div>
+          <div class="form-group">
+            <label id="lblCustBill">Monthly Electricity Bill</label>
+            <select id="custBill">
+              <option value="₹500 - ₹1,200 (1 kW)">₹500 - ₹1,200 (1 kW)</option>
+              <option value="₹1,200 - ₹2,000 (2 kW)">₹1,200 - ₹2,000 (2 kW)</option>
+              <option value="₹2,000 - ₹3,500 (3 kW)" selected>₹2,000 - ₹3,500 (3 kW - Most Popular)</option>
+              <option value="₹3,500 - ₹4,800 (4 kW)">₹3,500 - ₹4,800 (4 kW)</option>
+              <option value="₹4,800 - ₹6,500 (5 kW)">₹4,800 - ₹6,500 (5 kW)</option>
+              <option value="₹6,500 - ₹7,500 (6 kW)">₹6,500 - ₹7,500 (6 kW)</option>
+              <option value="₹7,500 - ₹8,500 (7 kW)">₹7,500 - ₹8,500 (7 kW)</option>
+              <option value="₹8,500 - ₹10,000 (8 kW)">₹8,500 - ₹10,000 (8 kW)</option>
+              <option value="₹10,000 - ₹11,500 (9 kW)">₹10,000 - ₹11,500 (9 kW)</option>
+              <option value="₹11,500+ (10 kW+)">₹11,500+ (10 kW+ Commercial)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label id="lblCustCity">Full Address / City (North or South Bihar) *</label>
+            <input type="text" id="custCity" placeholder="e.g. Patahi Chowk, Muzaffarpur" required />
+          </div>
+          <button type="submit" class="btn-submit-form" id="btnFormSubmit">Send Inquiry on WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculator Section -->
+  <section class="section-wrap" id="calculator">
+    <div class="section-header">
+      <div class="section-tag" id="calcTag">PM Surya Ghar + Bihar State DBT Subsidy</div>
+      <h2 id="calcTitle">Solar Subsidy &amp; Savings Calculator</h2>
+      <p id="calcSub">Select system capacity (kW) to view total cost, Central DBT, Bihar State DBT, and your net cost.</p>
+    </div>
+
+    <div class="calc-box">
+      <div class="calc-top-row">
+        <strong id="calcSelectLbl">Select System Capacity:</strong>
+        <div class="calc-pill" id="calcPillText">3 kW</div>
+      </div>
+
+      <!-- 1 to 10 kW Quick Buttons -->
+      <div class="kw-selector-btns" id="kwBtnGroup"></div>
+
+      <!-- Range Slider -->
+      <input type="range" min="1" max="10" value="3" step="1" id="kwRangeSlider" class="slider-control" oninput="applyKwSelection(this.value)" />
+
+      <!-- Results Grid -->
+      <div class="calc-results-grid">
+        <div class="res-card total">
+          <div class="res-lbl" id="resLblTotal">Total Estimated Cost</div>
+          <div class="res-val" id="resTotal">₹1,95,000</div>
+        </div>
+        <div class="res-card central">
+          <div class="res-lbl" id="resLblCentral">Central DBT Subsidy</div>
+          <div class="res-val" id="resCentral">- ₹78,000</div>
+        </div>
+        <div class="res-card state">
+          <div class="res-lbl" id="resLblState">Bihar State Subsidy</div>
+          <div class="res-val" id="resState">- ₹20,000</div>
+        </div>
+        <div class="res-card net">
+          <div class="res-lbl" id="resLblNet">Your Net Cost</div>
+          <div class="res-val" id="resNet">₹97,000</div>
+        </div>
+        <div class="res-card savings">
+          <div class="res-lbl" id="resLblSavings">Estimated Yearly Savings</div>
+          <div class="res-val" id="resSavings">~ ₹36,000</div>
+        </div>
+      </div>
+      
+      <div style="text-align: center;">
+        <a id="calcBookBtn" href="#" target="_blank" class="btn-hero-primary" style="display: inline-block;">Book This System on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solar Packages Section: Matching Screenshot 58 & 59 -->
+  <section class="section-wrap" id="packages">
+    <div class="section-header">
+      <div class="section-tag" id="pkgSecTag">Solar Packages</div>
+      <h2 id="pkgSecHeading">1.On-Grid Solar System &amp; 2. Hybrid Solar System (1-10 Kw)</h2>
+      <p id="pkgSecSub">Choose between high-efficiency grid-tied solar or battery backup hybrid systems.</p>
+    </div>
+
+    <!-- Tabs Container matching Screenshots 58 & 59 -->
+    <div class="tabs-container">
+      <div class="tabs-pill-box">
+        <button class="tab-toggle-btn active" id="tabOnGridBtn" onclick="switchPackageTab('ongrid')">1. On-Grid Solar System (1-10 kW)</button>
+        <button class="tab-toggle-btn" id="tabHybridBtn" onclick="switchPackageTab('hybrid')">2. Hybrid Solar System (1-10 Kw)</button>
+      </div>
+    </div>
+
+    <!-- On-Grid Container (Screenshot 58) -->
+    <div class="packages-grid" id="onGridGrid"></div>
+
+    <!-- Hybrid Container (Screenshot 59) -->
+    <div class="packages-grid" id="hybridGrid" style="display: none;"></div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section-wrap" id="features">
+    <div class="section-header">
+      <div class="section-tag" id="featSecTag">Smart Power Energy Features</div>
+      <h2 id="featSecHeading">Trusted &amp; Verified Solar EPC Company</h2>
+      <p id="featSecSub">Delivering Tier-1 engineering standards across North &amp; South Bihar with complete regulatory compliance.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feat-card">
+        <div class="feat-icon">🛡️</div>
+        <div class="feat-title" id="feat1Title">30 Years Performance Warranty</div>
+        <div class="feat-desc" id="feat1Desc">Tier-1 Mono PERC half-cut solar panels with 30 years linear power generation warranty.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🛠️</div>
+        <div class="feat-title" id="feat2Title">After Sales Service</div>
+        <div class="feat-desc" id="feat2Desc">Dedicated on-site technical support team offering 12 to 24 hours resolution.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🧼</div>
+        <div class="feat-title" id="feat3Title">Solar Panel Cleaning Service</div>
+        <div class="feat-desc" id="feat3Desc">Regular professional cleaning support to guarantee your system produces 100% peak units daily.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🏛️</div>
+        <div class="feat-title" id="feat4Title">North &amp; South Bihar Coverage</div>
+        <div class="feat-desc" id="feat4Desc">Complete Discom net-metering liaison and license approval across NBPDCL &amp; SBPDCL.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+      <div>
+        <h4>SMART POWER ENERGY</h4>
+        <p id="footDesc"><strong id="footTrust">Trusted &amp; Verified Solar Company</strong> | Rooftop Solar Systems, On-Grid &amp; Hybrid Inverter Solutions.</p>
+        <p><strong id="footServiceLbl">Service Area:</strong> North Bihar (NBPDCL) &amp; South Bihar (SBPDCL)</p>
+        <p><strong id="footOfficeLbl">Head Office:</strong> Patahi Chowk, Muzaffarpur, Bihar</p>
+      </div>
+      <div>
+        <h4 id="footContactTitle">Direct Contact</h4>
+        <p>📞 Phone: <a href="tel:+917004729460">+91 7004729460</a></p>
+        <p>💬 WhatsApp: <a href="https://api.whatsapp.com/send?phone=917004729460" target="_blank">+91 7004729460</a></p>
+        <p>✉ Email: <a href="mailto:smartpowerenergys@gmail.com">smartpowerenergys@gmail.com</a></p>
+      </div>
+      <div>
+        <h4 id="footHoursTitle">Working Hours</h4>
+        <p id="footDays">Monday - Saturday: 9:00 AM - 7:00 PM</p>
+        <p id="footSun">Sunday: Site Visits by Prior Appointment</p>
+      </div>
+    </div>
+    <div class="footer-bottom" id="footerBottom">
+      © 2026 Smart Power Energy. All rights reserved. | Patahi Chowk, Muzaffarpur, Bihar (843113)
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://api.whatsapp.com/send?phone=917004729460&text=Hello%20Smart%20Power%20Energy,%20I%20want%20information%20about%20Rooftop%20Solar%20System." target="_blank" class="floating-wa-btn" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- JavaScript: Pure English vs Pure Hindi Dictionaries and Toggle Handler -->
+  <script>
+    // State: Current Language ('en' or 'hi')
+    let currentLanguage = 'en';
+
+    // Pricing Chart (1 kW to 10 kW)
+    const solarPricingData = {
+      1: { price: 70000, central: 30000, state: 10000, net: 30000, unitsEn: "4-5 units/day", unitsHi: "4-5 यूनिट/दिन" },
+      2: { price: 140000, central: 60000, state: 20000, net: 60000, unitsEn: "8-10 units/day", unitsHi: "8-10 यूनिट/दिन" },
+      3: { price: 195000, central: 78000, state: 20000, net: 97000, unitsEn: "12-15 units/day", unitsHi: "12-15 यूनिट/दिन" },
+      4: { price: 253000, central: 78000, state: 20000, net: 155000, unitsEn: "16-20 units/day", unitsHi: "16-20 यूनिट/दिन" },
+      5: { price: 305000, central: 78000, state: 20000, net: 207000, unitsEn: "20-25 units/day", unitsHi: "20-25 यूनिट/दिन" },
+      6: { price: 354000, central: 78000, state: 20000, net: 256000, unitsEn: "24-30 units/day", unitsHi: "24-30 यूनिट/दिन" },
+      7: { price: 399000, central: 78000, state: 20000, net: 301000, unitsEn: "28-35 units/day", unitsHi: "28-35 यूनिट/दिन" },
+      8: { price: 440000, central: 78000, state: 20000, net: 342000, unitsEn: "32-40 units/day", unitsHi: "32-40 यूनिट/दिन" },
+      9: { price: 477000, central: 78000, state: 20000, net: 379000, unitsEn: "36-45 units/day", unitsHi: "36-45 यूनिट/दिन" },
+      10: { price: 495000, central: 78000, state: 20000, net: 397000, unitsEn: "40-50 units/day", unitsHi: "40-50 यूनिट/दिन" }
+    };
+
+    // Dictionary of Pure English & Pure Hindi Content
+    const i18n = {
+      en: {
+        topBar: "⚡ PM Surya Ghar: Direct Central & Bihar State DBT Subsidy Available! | Up to 100% savings on electricity bills: ",
+        brandSub: "ROOFTOP SOLAR SOLUTIONS | BIHAR",
+        navHome: "Home",
+        navCalc: "Subsidy Calculator",
+        navPkg: "Solar Package",
+        navFeat: "features",
+        navContact: "Contact Us",
+        navCall: "Call",
+        heroBadge1: "⚡ Up to 100% savings on electricity bills",
+        heroBadge2: "✓ Trusted & Verified Company",
+        heroTitle: "Install Rooftop Solar Plant, <br><span>Reliable Solar Service in North Bihar and South Bihar!</span>",
+        heroDesc: "Reliable rooftop solar engineering in North Bihar (NBPDCL) and South Bihar (SBPDCL). High-efficiency Mono PERC panels, hot-dip GI structure, and official net-metering to maximize Central and Bihar State DBT subsidies.",
+        heroBtnCalc: "Subsidy Calculator",
+        heroBtnEmail: "✉ Email Us",
+        heroStat1: "Panel Warranty",
+        heroStat2: "Bill Savings",
+        heroStat3: "Payback Period",
+        formTitle: "Book Free Site Inspection",
+        formSub: "Fill details to get an instant proposal directly on WhatsApp.",
+        lblCustName: "Full Name *",
+        phCustName: "e.g. Ramesh Kumar",
+        lblCustPhone: "Mobile Number *",
+        lblCustCA: "Consumer CA Number (Electricity Bill) *",
+        phCustCA: "10-12 Digit CA Number from Electricity Bill",
+        lblCustBill: "Monthly Electricity Bill",
+        lblCustCity: "Full Address / City (North or South Bihar) *",
+        phCustCity: "e.g. Patahi Chowk, Muzaffarpur",
+        btnFormSubmit: "Send Inquiry on WhatsApp",
+        calcTag: "PM Surya Ghar + Bihar State DBT Subsidy",
+        calcTitle: "Solar Subsidy & Savings Calculator",
+        calcSub: "Select system capacity (kW) to view total cost, Central DBT, Bihar State DBT, and your net cost.",
+        calcSelectLbl: "Select System Capacity:",
+        resLblTotal: "Total Estimated Cost",
+        resLblCentral: "Central DBT Subsidy",
+        resLblState: "Bihar State Subsidy",
+        resLblNet: "Your Net Cost",
+        resLblSavings: "Estimated Yearly Savings",
+        calcBookBtn: "Book This System on WhatsApp",
+        pkgSecTag: "Solar Packages",
+        pkgSecHeading: "1. On-Grid Solar System (1-10 kW) & 2. Hybrid Solar System (1-10 Kw)",
+        pkgSecSub: "Choose between high-efficiency grid-tied solar or battery backup hybrid systems.",
+        tabOnGrid: "1. On-Grid Solar System (1-10 kW)",
+        tabHybrid: "2. Hybrid Solar System (1-10 Kw)",
+        // On-Grid Card Tokens
+        onGridCardSub: "On-Grid",
+        onGridCardTitle: "On-Grid Solar",
+        popularTag: "★ POPULAR",
+        totalCostLbl: "Total cost:",
+        centralSubLbl: "Central DBT Subsidy:",
+        stateSubLbl: "Bihar State Subsidy:",
+        netCostLbl: "Your net cost:",
+        b1OnGrid: "Power Generation:",
+        b2OnGrid: "Government Discom Net-Metering Support",
+        b3OnGrid: "30 Years Linear Power Warranty",
+        b4OnGrid: "Hot-dip galvanized structure",
+        btnOnGridCard: "Book on WhatsApp",
+        // Hybrid Card Tokens
+        hybridCardSub: "Hybrid",
+        hybridCardTitle: "Hybrid system",
+        batteryTag: "★ BATTERY BACKUP",
+        sysTypeLbl: "System Type:",
+        sysTypeVal: "Solar + Battery Backup",
+        powerCutLbl: "Power cut relief:",
+        powerCutVal: "24x7 power supply",
+        energyIndLbl: "Energy<br>Independence:",
+        energyIndVal: "No power<br>cut",
+        b1Hybrid: "Production:",
+        b2Hybrid: "C10 Solar or Lithium LiFePO4 Battery Support",
+        b3Hybrid: "Automatic inverter mode activated on grid failure",
+        b4Hybrid: "30 Years Performance Warranty",
+        btnHybridCard: "Get a Hybrid Quote",
+        // Features
+        featSecTag: "Smart Power Energy Features",
+        featSecHeading: "Trusted & Verified Solar EPC Company 11 Years Old",
+        featSecSub: "Delivering Tier-1 engineering standards across North & South Bihar with complete regulatory compliance.",
+        feat1Title: "30 Years Performance Warranty",
+        feat1Desc: "Tier-1 Mono PERC half-cut Top-con HJT solar panels with 30 years linear power generation warranty.",
+        feat2Title: "After Sales Service",
+        feat2Desc: "Dedicated on-site technical support team offering 12 to 24 hours resolution.",
+        feat3Title: "Solar Panel Cleaning Service",
+        feat3Desc: "Regular professional cleaning support to guarantee your system produces 100% peak units daily.",
+        feat4Title: "North & South Bihar Coverage",
+        feat4Desc: "Complete Discom net-metering liaison and license approval across NBPDCL & SBPDCL.",
+        // Footer
+        footTrust: "Trusted & Verified Solar Company",
+        footServiceLbl: "Service Area:",
+        footOfficeLbl: "Head Office:",
+        footContactTitle: "Direct Contact",
+        footHoursTitle: "Working Hours " ,
+        footDays: "Monday - Saturday: 9:00 AM - 7:00 PM (I take calls 24*7)" ,
+        footSun: "Sunday: Site Visits by Prior Appointment",
+        footerBottom: "© 2026 Smart Power Energy. All rights reserved. | Patahi Chowk, Muzaffarpur, Bihar (843113)"
+      },
+      hi: {
+        topBar: "⚡ PM सूर्य घर योजना: केंद्र एवं बिहार राज्य सरकार की सीधी DBT सब्सिडी उपलब्ध! | बिजली बिल में 100% तक बचत: ",
+        brandSub: "रूफटॉप सोलर सोल्यूशन्स | बिहार",
+        navHome: "होम",
+        navCalc: "सब्सिडी कैलकुलेटर",
+        navPkg: "सोलर पैकेज",
+        navFeat: "विशेषताएँ",
+        navContact: "संपर्क करें",
+        navCall: "कॉल करें",
+        heroBadge1: "⚡ बिजली बिल में 100% तक की बचत",
+        heroBadge2: "✓ प्रमाणित एवं विश्वसनीय कंपनी",
+        heroTitle: "अपनी छत पर लगाएँ सोलर प्लांट, <br><span>उत्तर एवं दक्षिण बिहार में विश्वसनीय सोलर सेवाएँ!</span>",
+        heroDesc: "उत्तर बिहार (NBPDCL) एवं दक्षिण बिहार (SBPDCL) में विश्वसनीय रूफटॉप सोलर इंजीनियरिंग। उच्च गुणवत्ता वाले Mono PERC पैनल्स, हॉट-डिप GI स्ट्रक्चर और डिस्कॉम नेट-मीटरिंग के साथ केंद्र व बिहार राज्य DBT सब्सिडी का पूरा लाभ पाएँ।",
+        heroBtnCalc: "सब्सिडी कैलकुलेटर",
+        heroBtnEmail: "✉ ईमेल भेजें",
+        heroStat1: "पैनल वारंटी",
+        heroStat2: "बिजली बिल बचत",
+        heroStat3: "लागत वसूली",
+        formTitle: "मुफ़्त साइट इंस्पेक्शन बुक करें",
+        formSub: "विवरण भरें, आपकी इन्क्वायरी सीधे हमारे WhatsApp पर आएगी।",
+        lblCustName: "पूरा नाम *",
+        phCustName: "उदा. रमेश कुमार",
+        lblCustPhone: "मोबाइल नंबर *",
+        lblCustCA: "उपभोक्ता संख्या / Consumer CA Number (बिजली बिल) *",
+        phCustCA: "बिजली बिल से 10-12 अंकों का CA नंबर दर्ज करें",
+        lblCustBill: "मासिक बिजली बिल",
+        lblCustCity: "पूरा पता / शहर (उत्तर या दक्षिण बिहार) *",
+        phCustCity: "उदा. पताही चौक, मुज़फ़्फ़रपुर",
+        btnFormSubmit: "व्हाट्सएप पर इन्क्वायरी भेजें",
+        calcTag: "PM सूर्य घर + बिहार राज्य DBT सब्सिडी",
+        calcTitle: "सोलर सब्सिडी एवं बचत कैलकुलेटर",
+        calcSub: "क्षमता (kW) चुनें और कुल लागत, केंद्रीय सब्सिडी, बिहार राज्य सब्सिडी एवं शुद्ध खर्च तुरंत देखें।",
+        calcSelectLbl: "सिस्टम क्षमता चुनें:",
+        resLblTotal: "कुल अनुमानित लागत",
+        resLblCentral: "केंद्रीय DBT सब्सिडी",
+        resLblState: "बिहार राज्य सब्सिडी",
+        resLblNet: "आपकी वास्तविक लागत",
+        resLblSavings: "सालाना अनुमानित बचत",
+        calcBookBtn: "इस सिस्टम के लिए व्हाट्सएप पर बात करें",
+        pkgSecTag: "सोलर पैकेज विकल्प",
+        pkgSecHeading: "1. On-Grid Solar System (1-10 kW) & 2. Hybrid Solar System (1-10 Kw)",
+        pkgSecSub: "अपनी जरूरत के अनुसार ऑन-ग्रिड अथवा बैटरी बैकअप हाइब्रिड सिस्टम चुनें।",
+        tabOnGrid: "1. On-Grid Solar System (1-10 kW)",
+        tabHybrid: "2. Hybrid Solar System (1-10 Kw)",
+        // On-Grid Card Tokens
+        onGridCardSub: "On-Grid",
+        onGridCardTitle: "On-Grid सोलर",
+        popularTag: "★ सर्वाधिक लोकप्रिय",
+        totalCostLbl: "कुल लागत:",
+        centralSubLbl: "केंद्रीय DBT सब्सिडी:",
+        stateSubLbl: "बिहार राज्य सब्सिडी:",
+        netCostLbl: "आपकी शुद्ध लागत:",
+        b1OnGrid: "बिजली उत्पादन:",
+        b2OnGrid: "सरकारी डिस्कॉम नेट-मीटरिंग सुविधा",
+        b3OnGrid: "30 साल लीनियर पावर वारंटी",
+        b4OnGrid: "हॉट-डिप गैल्वेनाइज्ड हेवी स्ट्रक्चर",
+        btnOnGridCard: "व्हाट्सएप पर बुक करें",
+        // Hybrid Card Tokens
+        hybridCardSub: "Hybrid",
+        hybridCardTitle: "Hybrid सिस्टम",
+        batteryTag: "★ बैटरी बैकअप",
+        sysTypeLbl: "सिस्टम प्रकार:",
+        sysTypeVal: "सोलर + बैटरी बैकअप",
+        powerCutLbl: "बिजली कटौती से राहत:",
+        powerCutVal: "24x7 निर्बाध बिजली आपूर्ति",
+        energyIndLbl: "ऊर्जा<br>आत्मनिर्भरता:",
+        energyIndVal: "कोई पावर<br>कट नहीं",
+        b1Hybrid: "दैनिक उत्पादन:",
+        b2Hybrid: "C10 सोलर या Lithium LiFePO4 बैटरी सपोर्ट",
+        b3Hybrid: "ग्रिड कटने पर तुरंत इनवर्टर मोड एक्टिव",
+        b4Hybrid: "30 साल परफॉर्मेंस वारंटी",
+        btnHybridCard: "हाइब्रिड कोटेशन पाएँ",
+        // Features
+        featSecTag: "Smart Power Energy विशेषताएँ",
+        featSecHeading: "विश्वसनीय एवं प्रमाणित सोलर EPC कंपनी",
+        featSecSub: "उत्तर एवं दक्षिण बिहार में विश्वस्तरीय इंजीनियरिंग मानकों एवं सरकारी डिस्कॉम अप्रूवल के साथ सोलर समाधान।",
+        feat1Title: "30 Years Performance Warranty",
+        feat1Desc: "टियर-1 Mono PERC हाफ-कट पैनल्स पर 30 साल तक की लीनियर पावर जेनरेशन वारंटी।",
+        feat2Title: "After Sales Service (त्वरित सेवा)",
+        feat2Desc: "24 से 48 घंटे के भीतर तकनीकी सहायता और ऑन-साइट मेंटेनेंस सेवा।",
+        feat3Title: "Solar Panel Cleaning की सुविधा",
+        feat3Desc: "पैनल्स की नियमित पेशेवर सफाई ताकि आपका सिस्टम हमेशा 100% पीक यूनिट बनाए।",
+        feat4Title: "उत्तर एवं दक्षिण बिहार पूर्ण कवरेज",
+        feat4Desc: "NBPDCL एवं SBPDCL दोनों डिस्कॉम में पूर्ण नेट-मीटरिंग और लाइसेंस प्राप्त इंस्टॉलेशन।",
+        // Footer
+        footTrust: "प्रमाणित एवं विश्वसनीय सोलर कंपनी",
+        footServiceLbl: "सेवा क्षेत्र:",
+        footOfficeLbl: "मुख्य कार्यालय:",
+        footContactTitle: "सीधा संपर्क",
+        footHoursTitle: "कार्य समय",
+        footDays: "सोमवार - शनिवार: 9:00 AM - 7:00 PM",
+        footSun: "रविवार: केवल अपॉइंटमेंट साइट विजिट",
+        footerBottom: "© 2026 Smart Power Energy. सर्वाधिकार सुरक्षित। | पताही चौक, मुज़फ़्फ़रपुर, बिहार (843113)"
+      }
+    };
+
+    // Set Language explicitly (pure 'en' or pure 'hi')
+    function setLanguage(lang) {
+      currentLanguage = lang;
+      const t = i18n[lang];
+
+      // Update Segmented Button Styles
+      if (lang === 'en') {
+        document.getElementById('btnLangEn').classList.add('active');
+        document.getElementById('btnLangHi').classList.remove('active');
+        document.documentElement.lang = 'en';
+      } else {
+        document.getElementById('btnLangHi').classList.add('active');
+        document.getElementById('btnLangEn').classList.remove('active');
+        document.documentElement.lang = 'hi';
+      }
+
+      // Update Texts
+      document.getElementById('topBarText').innerHTML = t.topBar;
+      document.getElementById('brandSub').innerText = t.brandSub;
+      document.getElementById('navHome').innerText = t.navHome;
+      document.getElementById('navCalc').innerText = t.navCalc;
+      document.getElementById('navPkg').innerText = t.navPkg;
+      document.getElementById('navFeat').innerText = t.navFeat;
+      document.getElementById('navContact').innerText = t.navContact;
+      document.getElementById('navCallBtn').innerText = t.navCall;
+
+      document.getElementById('heroBadge1').innerText = t.heroBadge1;
+      document.getElementById('heroBadge2').innerText = t.heroBadge2;
+      document.getElementById('heroMainTitle').innerHTML = t.heroTitle;
+      document.getElementById('heroMainDesc').innerText = t.heroDesc;
+      document.getElementById('heroBtnCalc').innerText = t.heroBtnCalc;
+      document.getElementById('heroBtnEmail').innerText = t.heroBtnEmail;
+      document.getElementById('heroStat1').innerText = t.heroStat1;
+      document.getElementById('heroStat2').innerText = t.heroStat2;
+      document.getElementById('heroStat3').innerText = t.heroStat3;
+
+      document.getElementById('formTitle').innerText = t.formTitle;
+      document.getElementById('formSub').innerText = t.formSub;
+      document.getElementById('lblCustName').innerText = t.lblCustName;
+      document.getElementById('custName').placeholder = t.phCustName;
+      document.getElementById('lblCustPhone').innerText = t.lblCustPhone;
+      document.getElementById('lblCustCA').innerText = t.lblCustCA;
+      document.getElementById('custCA').placeholder = t.phCustCA;
+      document.getElementById('lblCustBill').innerText = t.lblCustBill;
+      document.getElementById('lblCustCity').innerText = t.lblCustCity;
+      document.getElementById('custCity').placeholder = t.phCustCity;
+      document.getElementById('btnFormSubmit').innerText = t.btnFormSubmit;
+
+      document.getElementById('calcTag').innerText = t.calcTag;
+      document.getElementById('calcTitle').innerText = t.calcTitle;
+      document.getElementById('calcSub').innerText = t.calcSub;
+      document.getElementById('calcSelectLbl').innerText = t.calcSelectLbl;
+      document.getElementById('resLblTotal').innerText = t.resLblTotal;
+      document.getElementById('resLblCentral').innerText = t.resLblCentral;
+      document.getElementById('resLblState').innerText = t.resLblState;
+      document.getElementById('resLblNet').innerText = t.resLblNet;
+      document.getElementById('resLblSavings').innerText = t.resLblSavings;
+      document.getElementById('calcBookBtn').innerText = t.calcBookBtn;
+
+      document.getElementById('pkgSecTag').innerText = t.pkgSecTag;
+      document.getElementById('pkgSecHeading').innerText = t.pkgSecHeading;
+      document.getElementById('pkgSecSub').innerText = t.pkgSecSub;
+      document.getElementById('tabOnGridBtn').innerText = t.tabOnGrid;
+      document.getElementById('tabHybridBtn').innerText = t.tabHybrid;
+
+      document.getElementById('featSecTag').innerText = t.featSecTag;
+      document.getElementById('featSecHeading').innerText = t.featSecHeading;
+      document.getElementById('featSecSub').innerText = t.featSecSub;
+      document.getElementById('feat1Title').innerText = t.feat1Title;
+      document.getElementById('feat1Desc').innerText = t.feat1Desc;
+      document.getElementById('feat2Title').innerText = t.feat2Title;
+      document.getElementById('feat2Desc').innerText = t.feat2Desc;
+      document.getElementById('feat3Title').innerText = t.feat3Title;
+      document.getElementById('feat3Desc').innerText = t.feat3Desc;
+      document.getElementById('feat4Title').innerText = t.feat4Title;
+      document.getElementById('feat4Desc').innerText = t.feat4Desc;
+
+      document.getElementById('footTrust').innerText = t.footTrust;
+      document.getElementById('footServiceLbl').innerText = t.footServiceLbl;
+      document.getElementById('footOfficeLbl').innerText = t.footOfficeLbl;
+      document.getElementById('footContactTitle').innerText = t.footContactTitle;
+      document.getElementById('footHoursTitle').innerText = t.footHoursTitle;
+      document.getElementById('footDays').innerText = t.footDays;
+      document.getElementById('footSun').innerText = t.footSun;
+      document.getElementById('footerBottom').innerText = t.footerBottom;
+
+      // Re-render package cards with active language
+      renderPackages();
+      // Re-apply calculator WhatsApp link text
+      applyKwSelection(document.getElementById('kwRangeSlider').value);
+    }
+
+    // Build 1 to 10 kW Buttons
+    const btnGroup = document.getElementById('kwBtnGroup');
+    for (let i = 1; i <= 10; i++) {
+      const b = document.createElement('button');
+      b.className = 'kw-btn' + (i === 3 ? ' active' : '');
+      b.id = 'kwBtn_' + i;
+      b.innerText = i + ' kW';
+      b.onclick = function() { applyKwSelection(i); };
+      btnGroup.appendChild(b);
+    }
+
+    // Apply kW Selection across Calculator
+    function applyKwSelection(kwVal) {
+      const kw = parseInt(kwVal, 10);
+      const data = solarPricingData[kw];
+      if (!data) return;
+
+      document.getElementById('kwRangeSlider').value = kw;
+      document.getElementById('calcPillText').innerText = kw + ' kW';
+
+      for (let i = 1; i <= 10; i++) {
+        const btn = document.getElementById('kwBtn_' + i);
+        if (btn) {
+          if (i === kw) btn.classList.add('active');
+          else btn.classList.remove('active');
+        }
+      }
+
+      document.getElementById('resTotal').innerText = '₹' + data.price.toLocaleString('en-IN');
+      document.getElementById('resCentral').innerText = '- ₹' + data.central.toLocaleString('en-IN');
+      document.getElementById('resState').innerText = '- ₹' + data.state.toLocaleString('en-IN');
+      document.getElementById('resNet').innerText = '₹' + data.net.toLocaleString('en-IN');
+
+      const savingsYearly = kw * 4 * 365 * 8; // ~₹8 per unit tariff
+      document.getElementById('resSavings').innerText = '~ ₹' + savingsYearly.toLocaleString('en-IN');
+
+      const msg = (currentLanguage === 'hi')
+        ? `नमस्ते Smart Power Energy, मुझे ${kw} kW सोलर रूफटॉप सिस्टम बुक करना है:\n• कुल लागत (Total Cost): ₹${data.price.toLocaleString('en-IN')}\n• केंद्रीय सब्सिडी: ₹${data.central.toLocaleString('en-IN')}\n• बिहार राज्य सब्सिडी: ₹${data.state.toLocaleString('en-IN')}\n• शुद्ध लागत (Net Cost): ₹${data.net.toLocaleString('en-IN')}\nकृपया आगे की प्रक्रिया बताएं।`
+        : `Hello Smart Power Energy, I want to book ${kw} kW Solar Rooftop System:\n• Total Cost: ₹${data.price.toLocaleString('en-IN')}\n• Central Subsidy: ₹${data.central.toLocaleString('en-IN')}\n• Bihar State Subsidy: ₹${data.state.toLocaleString('en-IN')}\n• Net Cost: ₹${data.net.toLocaleString('en-IN')}\nPlease share further booking process.`;
+      
+      document.getElementById('calcBookBtn').href = `https://api.whatsapp.com/send?phone=917004729460&text=${encodeURIComponent(msg)}`;
+    }
+
+    // Inquiry Form Handler
+    function handleInquirySubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('custName').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+      const caNum = document.getElementById('custCA').value.trim();
+      const bill = document.getElementById('custBill').value;
+      const city = document.getElementById('custCity').value.trim();
+
+      const text = (currentLanguage === 'hi')
+        ? `*☀️ नई सोलर इन्क्वायरी (Smart Power Energy)*\n\n` +
+          `👤 *नाम:* ${name}\n` +
+          `📱 *फोन:* ${phone}\n` +
+          `⚡ *उपभोक्ता CA संख्या:* ${caNum}\n` +
+          `💡 *मासिक बिजली बिल:* ${bill}\n` +
+          `📍 *पता / शहर:* ${city}\n\n` +
+          `कृपया रूफटॉप सोलर एवं सब्सिडी की विस्तृत जानकारी दें।`
+        : `*☀️️ New Solar Inquiry (Smart Power Energy)*\n\n` +
+          `👤 *Name:* ${name}\n` +
+          `📱 *Phone:* ${phone}\n` +
+          `⚡ *Consumer CA No.:* ${caNum}\n` +
+          `💡 *Monthly Bill:* ${bill}\n` +
+          `📍 *Address / City:* ${city}\n\n` +
+          `Please provide rooftop solar quotation & subsidy details.`;
+
+      window.open(`https://api.whatsapp.com/send?phone=917004729460&text=${encodeURIComponent(text)}`, '_blank');
+    }
+
+    // Render Cards in Pure English OR Pure Hindi
+    function renderPackages() {
+      const onGridContainer = document.getElementById('onGridGrid');
+      const hybridContainer = document.getElementById('hybridGrid');
+      onGridContainer.innerHTML = '';
+      hybridContainer.innerHTML = '';
+      const t = i18n[currentLanguage];
+
+      for (let kw = 1; kw <= 10; kw++) {
+        const item = solarPricingData[kw];
+        const isPop = (kw === 3);
+        const units = (currentLanguage === 'hi') ? item.unitsHi : item.unitsEn;
+
+        // ----------------------------------------------------
+        // On-Grid Card (Exact Screenshot 58)
+        // ----------------------------------------------------
+        const onGridCard = document.createElement('div');
+        onGridCard.className = 'pkg-card' + (isPop ? ' popular-card' : '');
+        onGridCard.innerHTML = `
+          ${isPop ? `<div class="card-top-tag">${t.popularTag}</div>` : ''}
+          <div>
+            <div class="pkg-subbadge">${kw} kW ${t.onGridCardSub}</div>
+            <div class="pkg-title">${kw} kW ${t.onGridCardTitle}</div>
+            
+            <div class="pkg-cost-box">
+              <div class="cost-row">
+                <span>${t.totalCostLbl}</span>
+                <span class="cost-val">₹${item.price.toLocaleString('en-IN')}</span>
+              </div>
+              <div class="cost-row">
+                <span style="color:#16a34a; font-weight:700;">${t.centralSubLbl}</span>
+                <span class="sub-green">- ₹${item.central.toLocaleString('en-IN')}</span>
+              </div>
+              <div class="cost-row">
+                <span style="color:#16a34a; font-weight:700;">${t.stateSubLbl}</span>
+                <span class="sub-green">- ₹${item.state.toLocaleString('en-IN')}</span>
+              </div>
+              <div class="cost-divider"></div>
+              <div class="net-cost-row">
+                <span class="net-cost-lbl">${t.netCostLbl}</span>
+                <span class="net-cost-val">₹${item.net.toLocaleString('en-IN')}</span>
+              </div>
+            </div>
+
+            <ul class="pkg-bullets">
+              <li><span class="check-icon">✓</span> <span>${t.b1OnGrid} ${units}</span></li>
+              <li><span class="check-icon">✓</span> <span>${t.b2OnGrid}</span></li>
+              <li><span class="check-icon">✓</span> <span>${t.b3OnGrid}</span></li>
+              <li><span class="check-icon">✓</span> <span>${t.b4OnGrid}</span></li>
+            </ul>
+          </div>
+
+          <a href="https://api.whatsapp.com/send?phone=917004729460&text=${encodeURIComponent((currentLanguage === 'hi') ? `नमस्ते Smart Power Energy, मुझे ${kw} kW On-Grid सोलर सिस्टम बुक करना है:\n• कुल लागत (Total Cost): ₹${item.price.toLocaleString('en-IN')}\n• केंद्रीय सब्सिडी: ₹${item.central.toLocaleString('en-IN')}\n• बिहार राज्य सब्सिडी: ₹${item.state.toLocaleString('en-IN')}\n• आपकी शुद्ध लागत (Net Cost): ₹${item.net.toLocaleString('en-IN')}` : `Hello Smart Power Energy, I want to book ${kw} kW On-Grid Solar System:\n• Total Cost: ₹${item.price.toLocaleString('en-IN')}\n• Central Subsidy: ₹${item.central.toLocaleString('en-IN')}\n• Bihar State Subsidy: ₹${item.state.toLocaleString('en-IN')}\n• Net Cost: ₹${item.net.toLocaleString('en-IN')}`)}" target="_blank" class="btn-card-green">
+            ${t.btnOnGridCard}
+          </a>
+        `;
+        onGridContainer.appendChild(onGridCard);
+
+        // ----------------------------------------------------
+        // Hybrid Card (Exact Screenshot 59 - No amount shown)
+        // ----------------------------------------------------
+        const hybridCard = document.createElement('div');
+        hybridCard.className = 'pkg-card' + (isPop ? ' popular-card' : '');
+        hybridCard.innerHTML = `
+          ${isPop ? `<div class="card-top-tag">${t.batteryTag}</div>` : ''}
+          <div>
+            <div class="pkg-subbadge">${kw} kW ${t.hybridCardSub}</div>
+            <div class="pkg-title">${kw} kW ${t.hybridCardTitle}</div>
+
+            <div class="pkg-cost-box">
+              <div class="cost-row">
+                <span class="hybrid-spec-lbl">${t.sysTypeLbl}</span>
+                <span class="hybrid-spec-val">${t.sysTypeVal}</span>
+              </div>
+              <div class="cost-row">
+                <span style="color:#0284c7; font-weight:700;">${t.powerCutLbl}</span>
+                <span class="hybrid-spec-blue">${t.powerCutVal}</span>
+              </div>
+              <div class="cost-divider"></div>
+              <div class="hybrid-highlight-box">
+                <span class="hybrid-highlight-lbl">${t.energyIndLbl}</span>
+                <span class="hybrid-highlight-val">${t.energyIndVal}</span>
+              </div>
+            </div>
+
+            <ul class="pkg-bullets">
+              <li><span class="check-icon">✓</span> <span>${t.b1Hybrid} ${units}</span></li>
+              <li><span class="check-icon">✓</span> <span>${t.b2Hybrid}</span></li>
+              <li><span class="check-icon">✓</span> <span>${t.b3Hybrid}</span></li>
+              <li><span class="check-icon">✓</span> <span>${t.b4Hybrid}</span></li>
+            </ul>
+          </div>
+
+          <a href="https://api.whatsapp.com/send?phone=917004729460&text=${encodeURIComponent((currentLanguage === 'hi') ? `नमस्ते Smart Power Energy, मुझे ${kw} kW Hybrid सोलर सिस्टम (सोलर + इनवर्टर + बैटरी बैकअप) की विस्तृत कोटेशन चाहिए।\nकृपया बैटरी बैकअप ऑप्शंस सहित जानकारी साझा करें।` : `Hello Smart Power Energy, I want a detailed customized quotation for ${kw} kW Hybrid Solar System with Battery Backup.\nPlease share battery backup options and details.`)}" target="_blank" class="btn-card-blue">
+            ${t.btnHybridCard}
+          </a>
+        `;
+        hybridContainer.appendChild(hybridCard);
+      }
+    }
+
+    // Tab Switcher between On-Grid and Hybrid
+    function switchPackageTab(tab) {
+      const onGridBox = document.getElementById('onGridGrid');
+      const hybridBox = document.getElementById('hybridGrid');
+      const onGridBtn = document.getElementById('tabOnGridBtn');
+      const hybridBtn = document.getElementById('tabHybridBtn');
+
+      if (tab === 'ongrid') {
+        onGridBox.style.display = 'grid';
+        hybridBox.style.display = 'none';
+        onGridBtn.classList.add('active');
+        hybridBtn.classList.remove('active');
+      } else {
+        onGridBox.style.display = 'none';
+        hybridBox.style.display = 'grid';
+        hybridBtn.classList.add('active');
+        onGridBtn.classList.remove('active');
+      }
+    }
+
+    // Initialize application on load (Defaults to English)
+    window.onload = function() {
+      setLanguage('en');
+    };
+  </script>
+</body>
+</html>
