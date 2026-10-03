@@ -70,9 +70,30 @@
       gap: 12px;
     }
     .brand-logo-img {
-      height: 72px;
+      height: 56px;
       width: auto;
       object-fit: contain;
+      display: block;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .brand-titles {
+      max-width: 120px;
+      border-left: 2px solid #e2e8f0;
+      padding-left: 10px;
+    }
+    @media (max-width: 640px) {
+      .brand-logo-img { height: 44px; }
+      .brand-titles { display: none; }
     }
     .brand-titles h1 {
       font-size: 20px;
@@ -686,7 +707,7 @@
       <div class="brand-wrap">
         <img src="image-removebg-preview.png" alt="Smart Power Energy Logo" class="brand-logo-img" onerror="this.style.display='none'">
         <div class="brand-titles">
-          <h1><span class="smart">SMART</span> <span class="power">POWER</span> <span class="energy">ENERGY</span></h1>
+          <h1 class="sr-only">Smart Power Energy</h1>
           <p id="brandSub">ROOFTOP SOLAR SOLUTIONS | BIHAR</p>
         </div>
       </div>
@@ -892,7 +913,7 @@
       <div>
         <h4 id="footContactTitle">Direct Contact</h4>
         <p>📞 Phone: <a href="tel:+917004729460">+91 7004729460</a></p>
-        <p>💬 WhatsApp: <a href="https://api.whatsapp.com/send?phone=917004729460" target="_blank">+91 7004729460</a></p>
+        <p>��� WhatsApp: <a href="https://api.whatsapp.com/send?phone=917004729460" target="_blank">+91 7004729460</a></p>
         <p>✉ Email: <a href="mailto:smartpowerenergys@gmail.com">smartpowerenergys@gmail.com</a></p>
       </div>
       <div>
@@ -1092,7 +1113,7 @@
         powerCutLbl: "बिजली कटौती से राहत:",
         powerCutVal: "24x7 निर्बाध बिजली आपूर्ति",
         energyIndLbl: "ऊर्जा<br>आत्मनिर्भरता:",
-        energyIndVal: "कोई पावर<br>कट नहीं",
+        energyIndVal: "कोई पावर<br>कट ��हीं",
         b1Hybrid: "दैनिक उत्पादन:",
         b2Hybrid: "C10 सोलर या Lithium LiFePO4 बैटरी सपोर्ट",
         b3Hybrid: "ग्रिड कटने पर तुरंत इनवर्टर मोड एक्टिव",
