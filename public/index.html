@@ -92,14 +92,59 @@
     }
     @media (max-width: 640px) {
       .brand-logo-img { height: 44px; }
-      .brand-titles { display: none; }
+      .brand-titles { padding-left: 7px; }
+      .brand-titles h1 { font-size: 15px; }
+      .brand-titles p { font-size: 7px; letter-spacing: 0.2px; }
     }
     .brand-titles h1 {
       font-size: 20px;
       font-weight: 900;
       letter-spacing: -0.5px;
       line-height: 1.1;
+      white-space: nowrap;
+    } 
+    .brand-titles .smart { color: #dc2626; }
+    .brand-titles .power { color: #0284c7; }
+    .brand-titles .energy { color: #16a34a; }
+    .company-strip {
+      overflow: hidden;
+      background: #f8fafc;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 9px 0;
     }
+    .company-track {
+      display: flex;
+      width: max-content;
+      animation: company-scroll 48s linear infinite;
+    }
+    .company-track:hover { animation-play-state: paused; }
+    .company-set { display: flex; align-items: center; gap: 26px; padding-right: 26px; }
+    .company-logo {
+      width: 116px;
+      height: 42px;
+      flex: 0 0 116px;
+      object-fit: contain;
+      padding: 6px 10px;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .company-logo:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(15,23,42,.12); }
+    @keyframes company-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) { .company-track { animation: none; } }
+    @media (max-width: 640px) { .company-logo { width: 100px; flex-basis: 100px; } .company-set { gap: 14px; padding-right: 14px; } } 
+    .brand-titles h1 {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    } 
+    .brand-titles .smart { color: #dc2626; }
+    .brand-titles .power { color: #0284c7; }
+    .brand-titles .energy { color: #16a34a; }
+    
     .brand-titles .smart { color: #dc2626; }
     .brand-titles .power { color: #0284c7; }
     .brand-titles .energy { color: #16a34a; }
@@ -706,7 +751,7 @@
       <div class="brand-wrap">
         <img src="image-removebg-preview.png" alt="Smart Power Energy Logo" class="brand-logo-img" onerror="this.style.display='none'">
         <div class="brand-titles">
-          <h1>Smart Power Energy</h1>
+          <h1><span class="smart">Smart</span> <span class="power">Power</span> <span class="energy">Energy</span></h1>
           <p id="brandSub">ROOFTOP SOLAR SOLUTIONS | BIHAR</p>
         </div>
       </div>
@@ -730,6 +775,43 @@
       </div>
     </div>
   </header>
+
+  <!-- Scrolling Solar Company Logos -->
+  <section class="company-strip" aria-label="Solar company partners">
+    <div class="company-track">
+      <div class="company-set">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/tata/default.svg" alt="Tata Power Solar" title="Tata Power Solar" onclick="openCompanyWhatsApp('Tata Power Solar')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/adani/default.svg" alt="Adani Solar" title="Adani Solar" onclick="openCompanyWhatsApp('Adani Solar')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/vikram-solar/default.svg" alt="Vikram Solar" title="Vikram Solar" onclick="openCompanyWhatsApp('Vikram Solar')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/waaree/default.svg" alt="Waaree Energies" title="Waaree Energies" onclick="openCompanyWhatsApp('Waaree Energies')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/renewsys/default.svg" alt="RenewSys" title="RenewSys" onclick="openCompanyWhatsApp('RenewSys')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/emmvee/default.svg" alt="Emmvee" title="Emmvee" onclick="openCompanyWhatsApp('Emmvee')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/azure/default.svg" alt="Azure Power" title="Azure Power" onclick="openCompanyWhatsApp('Azure Power')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/jakson/default.svg" alt="Jakson" title="Jakson" onclick="openCompanyWhatsApp('Jakson')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/goldi-solar/default.svg" alt="Goldi Solar" title="Goldi Solar" onclick="openCompanyWhatsApp('Goldi Solar')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/loom-solar/default.svg" alt="Loom Solar" title="Loom Solar" onclick="openCompanyWhatsApp('Loom Solar')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/luminous/default.svg" alt="Luminous Solar" title="Luminous Solar" onclick="openCompanyWhatsApp('Luminous Solar')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/growatt/default.svg" alt="Growatt" title="Growatt" onclick="openCompanyWhatsApp('Growatt')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/deye/default.svg" alt="Deye" title="Deye" onclick="openCompanyWhatsApp('Deye')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/exide/default.svg" alt="Exide Solar" title="Exide Solar" onclick="openCompanyWhatsApp('Exide Solar')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/v-guard/default.svg" alt="V-Guard" title="V-Guard" onclick="openCompanyWhatsApp('V-Guard')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/premier-energies/default.svg" alt="Premier Energies" title="Premier Energies" onclick="openCompanyWhatsApp('Premier Energies')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/su-kam/default.svg" alt="Su-kam Solar" title="Su-kam Solar" onclick="openCompanyWhatsApp('Su-kam Solar')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/eastman/default.svg" alt="Eastman Solar" title="Eastman Solar" onclick="openCompanyWhatsApp('Eastman Solar')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/solaredge/default.svg" alt="SolarYaan" title="SolarYaan" onclick="openCompanyWhatsApp('SolarYaan')">
+      </div>
+      <div class="company-set" aria-hidden="true">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/tata/default.svg" alt="" onclick="openCompanyWhatsApp('Tata Power Solar')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/adani/default.svg" alt="" onclick="openCompanyWhatsApp('Adani Solar')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/vikram-solar/default.svg" alt="" onclick="openCompanyWhatsApp('Vikram Solar')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/waaree/default.svg" alt="" onclick="openCompanyWhatsApp('Waaree Energies')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/renewsys/default.svg" alt="" onclick="openCompanyWhatsApp('RenewSys')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/growatt/default.svg" alt="" onclick="openCompanyWhatsApp('Growatt')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/deye/default.svg" alt="" onclick="openCompanyWhatsApp('Deye')">
+        <img class="company-logo" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/exide/default.svg" alt="" onclick="openCompanyWhatsApp('Exide Solar')">
+      </div>
+    </div>
+  </section>
 
   <!-- Hero Section -->
   <section class="hero" id="home">
@@ -1430,6 +1512,12 @@
     window.onload = function() {
       setLanguage('en');
     };
+  </script>
+  <script>
+    function openCompanyWhatsApp(company) {
+      const message = `This company Customer interested: ${company}`;
+      window.open(`https://wa.me/917004729460?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+    }
   </script>
 </body>
 </html>
